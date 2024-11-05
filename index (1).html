@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css" type="text/css" media="all">
+    <script src="https://kit.fontawesome.com/dcdbee73bd.js" crossorigin="anonymous"></script>
+    <title>Ismaël/Aïssata | candidature CAVL </title>
+  </head>
+  <body>
+    <header>
+      <h1 class="title">Ismaël VELAY | Aïssata Clermont</h1>
+    </header>
+
+    <main>
+      <div class="axes sections">
+        <h2 class="title">LES AXES DE NOTRE CANDIDATURE</h2>
+        <ul class="list">
+          <li>
+            <h3 class="axe title"><i class="fa-solid fa-school"></i> SOCIALE ET SCOLAIRE</h3>
+            <p>Renforcer le bien-être des élèves et du personnel en améliorant leurs conditions de travail.</p>
+          </li>
+          <li>
+            <h3 class="axe title"><i class="fa-solid fa-lock"></i> SENSIBILISATION</h3>
+            <p>Sensibiliser autour de la vie privée et de la sécurité sur Internet.</p>
+          </li>  
+          <li>
+            <h3 class="axe title"><i class="fa-solid fa-user"></i> FORMATION CIVIQUE</h3>
+            <p>Eclairer les futures électeur.rices sur leurs choix.</p>
+          </li>
+          <li>
+            <h3 class="axe title"><i class="fa-solid fa-leaf"></i> ECOLOGIE</h3>
+            <p>En montagne, les effets du changement climatique sont particulièrement perceptibles. Il est impératif de préserver nos espaces de loisirs afin de garantir la pérennité de nos activités de plein air.</p>
+          </li>
+        </ul>
+      </div>
+      <div class="program sections">
+        <h2 class="title">NOTRE PROGRAMME</h2>
+        <ul class="list">
+          <li>
+            <h3 class="axe title"><i class="fa-solid fa-school"></i> SOCIALE ET SCOLAIRE</h3>
+            <ul>
+              <li>Mettre en place un dialogue entre lycéens et les membres du personnel des établissements.</li>
+              <li>Offrir un soutien au personnel face à d'éventuelles grèves.</li>
+            </ul>
+          </li>
+          <li>
+            <h3 class="axe title"><i class="fa-solid fa-lock"></i> SENSIBILISATION</h3>
+            <ul>
+              <li>Solliciter la participation d'associations spécialisées afin de fournir une introduction au domaine du hacking.</li>
+              <li>Créations de visuels pour alerter et prévenir des risques.</li>
+            </ul>
+          </li>  
+          <li>
+            <h3 class="axe title"><i class="fa-solid fa-user"></i> FORMATION CIVIQUE</h3>
+            <ul>
+              <li>Organisation de groupes de discussion pour aborder l'actualité et les questions politiques.</li>
+              <li>Création de supports visuels visant à initier les élèves aux différents partis politiques, incluant un récapitulatif de leur histoire et de leur idéologie.</li>
+            </ul>
+          </li>
+          <li>
+            <h3 class="axe title"><i class="fa-solid fa-leaf"></i> ECOLOGIE</h3>
+            <ul>
+              <li>Mise en place d'actions en collaboration avec la LPO pour informer, sensibiliser et agir en faveur de l'environnement.</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </main>
+    <script>
+    let axes = document.getElementsByClassName("axe")
+    for(const axe of axes) {
+      axe.onclick = (e) => {
+        let style = ""
+        if(e.target.nextElementSibling.style.length == 0) {
+          style = "display:block;"
+        }
+        e.target.nextElementSibling.style = style
+      }
+    }
+    </script>
+  </body>
+</html>
